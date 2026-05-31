@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Elements Demo</title>
+</head>
+
+<body>
+
+<h2>Form Demonstration</h2>
+
+<form>
+
+<fieldset>
+<legend>Basic Information</legend>
+
+Name: <input type="text"><br><br>
+
+Select Date: <input type="date"><br><br>
+
+Upload File: <input type="file"><br><br>
+
+Choose Color: <input type="color"><br><br>
+
+</fieldset>
+
+<br>
+
+<label>Select Department:</label>
+<select>
+<optgroup label="Engineering">
+<option>CE</option>
+<option>CS</option>
+<option>EE</option>
+<option>ME</option>
+<option>IE</option>
+</optgroup>
+<br>
+<hr>
+
+
+<optgroup label="Other">
+<option>Maths</option>
+<option>Chemistry</option>
+<option>Physics</option>
+</optgroup>
+</select>
+
+<br><br>
+
+<label>Choose City:</label>
+<input list="cities">
+
+<datalist id="cities">
+<option value="Guwahati">
+<option value="Jorhat">
+<option value="Silchar">
+<option value="Dibrugarh">
+<option value="Morigaon">
+</datalist>
+
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>

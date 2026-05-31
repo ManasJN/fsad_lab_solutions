@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Hover</title>
+</head>
+<body>
+
+    <h2>Hover on the image</h2>
+
+    <img id="img1"
+         src="https://picsum.photos/id/237/300/200"
+         width="300"
+         height="200">
+
+    <script>
+
+        let image = document.getElementById("img1");
+
+        image.addEventListener("mouseover", function () {
+            image.src = "https://picsum.photos/id/238/300/200";
+        });
+
+        image.addEventListener("mouseout", function () {
+            image.src = "https://picsum.photos/id/237/300/200";
+        });
+
+    </script>
+
+</body>
+</html>

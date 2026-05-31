@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+
+<h3>Simple Calculator</h3>
+
+<input type="number" id="num1">
+<input type="number" id="num2">
+<input type="text" id="result" readonly>
+
+<br><br>
+
+<button onclick="clearAll()">AC</button>
+<button onclick="calc('+')">+</button>
+<button onclick="calc('-')">-</button>
+<button onclick="calc('*')">*</button>
+<button onclick="calc('/')">/</button>
+
+<script>
+function calc(op) {
+    let a = parseFloat(document.getElementById("num1").value);
+    let b = parseFloat(document.getElementById("num2").value);
+    let r;
+
+    if (op === '+') r = a + b;
+    else if (op === '-') r = a - b;
+    else if (op === '*') r = a * b;
+    else if (op === '/') r = a / b;
+
+    document.getElementById("result").value = r;
+}
+
+function clearAll() {
+    document.getElementById("num1").value = "";
+    document.getElementById("num2").value = "";
+    document.getElementById("result").value = "";
+}
+</script>
+
+</body>
+</html>

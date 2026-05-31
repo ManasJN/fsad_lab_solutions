@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>String Methods</h3>
+    <p id="out"></p>
+
+    <script>
+      let str = " Hello World ";
+
+      let result =
+        "charAt(1): " +
+        str.charAt(1) +
+        "<br>" +
+        "indexOf('World'): " +
+        str.indexOf("World") +
+        "<br>" +
+        "concat: " +
+        str.concat(" JS") +
+        "<br>" +
+        "match: " +
+        str.match("World") +
+        "<br>" +
+        "replace: " +
+        str.replace("World", "JS") +
+        "<br>" +
+        "trim: " +
+        str.trim();
+
+      document.getElementById("out").innerHTML = result;
+    </script>
+  </body>
+</html>

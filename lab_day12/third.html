@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown Timer</title>
+</head>
+<body>
+
+    <h1 id="timer">10</h1>
+
+    <script>
+
+        let count = 10;
+
+        let x = setInterval(function () {
+
+            document.getElementById("timer").innerHTML = count;
+
+            count--;
+
+            if (count < 0) {
+
+                clearInterval(x);
+
+                alert("Time Out");
+
+            }
+
+        }, 1000);
+
+    </script>
+
+</body>
+</html>
