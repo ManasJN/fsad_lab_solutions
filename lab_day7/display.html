@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+
+    <style>
+        .box {
+            width: 120px;
+            height: 80px;
+            margin: 10px;
+            padding: 10px;
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+
+        .inline { display: inline; background-color: lightcoral; }
+        .block { display: block; background-color: lightgreen; }
+        .inline-block { display: inline-block; background-color: lightyellow; }
+        .none { display: none; }
+    </style>
+</head>
+<body>
+
+    <h2>Display Property Demo</h2>
+
+    <div class="box inline">Inline</div>
+    <div class="box inline">Inline</div>
+
+    <div class="box block">Block</div>
+    <div class="box block">Block</div>
+
+    <div class="box inline-block">Inline-Block</div>
+    <div class="box inline-block">Inline-Block</div>
+
+    <div class="box none">Hidden (None)</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property</title>
+
+    <style>
+        .container {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        .visible { overflow: visible; background-color: lightblue; }
+        .hidden { overflow: hidden; background-color: lightcoral; }
+        .scroll { overflow: scroll; background-color: lightgreen; }
+        .auto { overflow: auto; background-color: lightyellow; }
+    </style>
+</head>
+<body>
+
+    <h2>Overflow Demo</h2>
+
+    <div class="container visible">
+        This is visible overflow content that goes outside the box.
+    </div>
+
+    <div class="container hidden">
+        This content is hidden when it exceeds the box size.
+    </div>
+
+    <div class="container scroll">
+        This content adds scrollbars when needed or always.
+    </div>
+
+    <div class="container auto">
+        This content shows scrollbars only when needed.
+    </div>
+
+</body>
+</html>

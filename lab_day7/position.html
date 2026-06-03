@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: lightgreen;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 200px;
+            background-color: lightcoral;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: yellow;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="sticky">Sticky Header</h2>
+
+    <div class="box">Normal</div>
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+    <div class="box fixed">Fixed</div>
+
+</body>
+</html>
